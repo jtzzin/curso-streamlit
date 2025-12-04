@@ -21,7 +21,7 @@ colunas = st.columns(3); # criando tres espacos de colunas
 with colunas [0]:
     st.header("Coluna 1");
     if st.button("Clique aqui!"): # botao para apertar e receber um  em verde
-        st.success("voce apertou mesmo!"); # aviso
+        st.success("voce apertou mesmo! (.sucess)"); # aviso
 
     # criando uma barra de arrastar - slider -
     valor_slider = st.slider (
@@ -39,7 +39,7 @@ with colunas [0]:
     #coluna 2
     with colunas[1]:
         st.header("Coluna 2");
-        st.info("essa é uma mensagem informativa"); # msg de info azul
+        st.info("essa é uma mensagem informativa: (.info)"); # msg de info azul
 
         #aqui, pode inserir url de img ou direto do caminho do pc
         st.image(
@@ -47,6 +47,20 @@ with colunas [0]:
             caption="exemplo usando link", # legenda da img,
             use_container_width=True # usa todo o espaco possivel do campo
         )
+
+        st.warning("o aviso sai em amarelo: (.warning)");
+        # fim coluna 2
+
+    # area geral
+    numero = st.number_input (
+        label=("Informe um numero: "),
+        min_value=1,
+        max_value=1000
+
+    )
+    st.write(f"voce digitou: {numero}");
+
+
 
 
     
