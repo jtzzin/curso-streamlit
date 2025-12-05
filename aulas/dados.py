@@ -21,6 +21,9 @@ st.dataframe(df); # instancia ele (se eu deixar apenas - st.table -, nao fica po
 st.subheader("Graficos intuitivos: ");
 st.line_chart(df); # aqui, o grafico vai ser em linhas
 st.bar_chart(df);# grafico de barras
+# fim dos dados aleatorios
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Fazendo upload do proprio pc para o site
 
